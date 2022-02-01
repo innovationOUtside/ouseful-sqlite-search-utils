@@ -47,11 +47,6 @@ Table returning functions:
 - `get_sentences()`
 - `get_paragraphs()`
 
-### `get_sentences()`
-
-Split a record into a table of results, with one sentence per result.
-
-
 ## Approximate Search Functions
 
 The package currently includes several "approximate" search functions that can retrieve a document based on exactly *or almost* matching terms in the search query with terms that appear in the document:
