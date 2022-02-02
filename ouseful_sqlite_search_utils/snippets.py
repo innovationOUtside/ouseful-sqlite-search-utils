@@ -121,8 +121,9 @@ def get_longest_common_substring(text_a, text_b):
 
 # Register the functions
 def register_snippets(CONN):
+    """Register custom functions with sqlite database connection."""
     SQLite_Sentenciser.register(CONN) #get_sentences
-    CONN.create_aggregate('sentence_join', 1, SentenceJoin)
+    CONN.create_aggregate('join_sentences', 1, SentenceJoin)
     CONN.create_function("get_longest_common_substring", 2, get_longest_common_substring)
 
     SQLite_Paragraphiser.register(CONN) #get_paragraphs

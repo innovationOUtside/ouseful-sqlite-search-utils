@@ -77,6 +77,7 @@ class SQLite_FuzzyMatcher(TableFunction):
 
 # Register the functions
 def register_partials(CONN):
+    """Register custom functions with sqlite database connection."""
     CONN.create_function('find_near_matches', -1, find_near_matches)
     ReSearch.register(CONN) #re_search
     RegexSearch.register(CONN) #regex_search

@@ -17,10 +17,10 @@ class TypoHighlighter:
         Note that this class make be slow to instantiate as the
         LanguageTool http server started.
     """
-    # Shared instance
-    tool = language_tool_python.LanguageTool('en-UK')
+    # Shared instance - en-UK doesn't seem to work?
+    tool = language_tool_python.LanguageTool('en-US')
     
-    def __init__(self, style='html', #lang='en-UK',
+    def __init__(self, style='html', #lang='en-US',
                  html_color='red', md_style='__'):
         self.style = style
         #self.lang = lang
@@ -74,4 +74,5 @@ class DBTypoHighlighter(TableFunction):
 
 # Register the functions
 def register_partials(CONN):
+    """Register custom functions with sqlite database connection."""
     DBTypoHighlighter.register(CONN) #typo_highlighter

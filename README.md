@@ -40,7 +40,7 @@ Scalar returning functions:
 
 Aggregation functions:
 
-- `sentence_join()`
+- `join_sentences()`
 
 Table returning functions:
 
@@ -62,6 +62,6 @@ Table returning functions:
 - `find_near_matches_all()`
 - `find_fuzzy_matches()`
 
-# Other
+## Other
 
- - `typo_highlighter()` *this is currenly broken*
+ - `typo_highlighter()`

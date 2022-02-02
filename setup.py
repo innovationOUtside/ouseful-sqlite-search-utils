@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 import io
 import os
 
-VERSION = "0.0.1"
+VERSION = "0.0.2"
 
 
 def get_long_description():
@@ -15,7 +15,7 @@ def get_long_description():
 
 setup(
     name="ouseful-sqlite-search-utils",
-    description="Custom Pyhton functions for extending sqlite3 search.",
+    description="Custom Python functions for extending sqlite3 search.",
     long_description=get_long_description(),
     long_description_content_type="text/markdown",
     author="Tony Hirst",
