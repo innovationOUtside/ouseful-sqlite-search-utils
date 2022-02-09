@@ -27,7 +27,7 @@ Install as:
 
 ## Examples
 
-See the example notebook(s) in the `examples` directory.
+See the [example notebook(s)](./examples) in the `examples` directory.
 
 ## Snippet Returning Functions
 
