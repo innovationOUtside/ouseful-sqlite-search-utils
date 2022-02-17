@@ -27,10 +27,9 @@ setup(
         "regex",
         "fuzzysearch",
         "spacy",
-        "spaczz",
-        "language_tool_python"
+        "spaczz"
     ],
-    extras_require={
+    extras_require={"spelling": ["language_tool_python"]
     },
     entry_points="""
     """,
